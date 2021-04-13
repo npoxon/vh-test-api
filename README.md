@@ -1,32 +1,8 @@
 # VH Test Api
 
-The Test Api supports the acceptance tests in the vh-video-web, vh-service-web and vh-admin-web projects by centralising the management of test users and data, as well as providing a mechanism for the front end tests to retreive data from the backend vh-booking-api, vh-video-api and vh-user-api.
+<img width="1553" alt="Test Api Swagger" src="https://user-images.githubusercontent.com/10450246/114572409-be23f180-9c77-11eb-9051-c80084398675.png">
 
-## Current Build Status
-[![Build Status](https://dev.azure.com/hmctsreform/VirtualHearings/_apis/build/status/hmcts.vh-test-api?branchName=master)](https://dev.azure.com/hmctsreform/VirtualHearings/_build/latest?definitionId=120&branchName=master)
-
-## Quality Gate Status
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vh-test-api&metric=alert_status)](https://sonarcloud.io/dashboard?id=vh-test-api)
-
-## Generating the clients
-If the interface for the Bookings API Client, Video API Client or User API Client are missing after cloning the repo, these can be rebuilt using the following command:
-
-In the `TestApi.Services.Generator` folder:
-```
-nswag run
-```
-
-## Branch name git hook will run on pre commit and control the standard for new branch name.
-
-The branch name should start with: feature/VIH-XXXX-branchName (X - is digit).
-If git version is less than 2.9 the pre-commit file from the .githooks folder need copy to local .git/hooks folder.
-To change git hooks directory to directory under source control run (works only for git version 2.9 or greater) :
-\$ git config core.hooksPath .githooks
-
-## Commit message
-
-The commit message will be validated by prepare-commit-msg hook.
-The commit message format should start with : 'feature/VIH-XXXX : ' folowing by 8 or more characters description of commit, otherwise the warning message will be presented.
+The Test Api was an api I developed to manage test users and test data, as well as providing a mechanism for the front end tests to retreive data from the backend apis.
 
 ## Run Stryker
 
