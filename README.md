@@ -1,6 +1,5 @@
 # VH Test Api
 
-<img width="1553" alt="Test Api Swagger" src="https://user-images.githubusercontent.com/10450246/114572409-be23f180-9c77-11eb-9051-c80084398675.png">
 
 The Test Api was an api I developed to manage test users and test data, as well as providing a mechanism for the front end tests to retreive data from the backend apis.
 
